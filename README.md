@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vaishakhsz/vsquare-infotech"><img src="https://img.shields.io/badge/Status-Active%20Production-blue.svg" alt="Status"></a>
+  <a href="https://vsquareinfotech.co.in"><img src="https://img.shields.io/badge/Website-vsquareinfotech.co.in-indigo.svg" alt="Website"></a>
+  <a href="https://github.com/vaishakhsz/vsquare-infotech"><img src="https://img.shields.io/badge/Hosting-GitHub%20Pages-black.svg" alt="Hosting"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
-  <a href="https://github.com/vaishakhsz/vsquare-infotech"><img src="https://img.shields.io/badge/Tech%20Stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript%20%7C%20AOS-indigo.svg" alt="Tech Stack"></a>
 </p>
 
 ---
