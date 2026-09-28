@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cabinet+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Cabinet+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -111,33 +111,50 @@
       filter: blur(50px);
     }
 
-    #vsquare-site h1, 
-    #vsquare-site h2, 
-    #vsquare-site h3, 
-    #vsquare-site .section-title,
-    #vsquare-site .contact-info strong {
-      font-family: 'Cabinet Grotesk', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 2px; 
+    /* ================================================ */
+    /* REFINED TYPOGRAPHY & SECTION HEADERS             */
+    /* ================================================ */
+    .section-header-wrap {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 15px;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+      border: 1px solid rgba(79, 70, 229, 0.2);
+      border-radius: 100px;
+      color: #4f46e5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11.5px;
       font-weight: 800;
-      margin-top: 0;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.06);
     }
 
     .section-title {
-      font-size: 38px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
       text-align: center;
-      color: #0a1628;
-      margin-bottom: 18px;
+      color: #090e1a;
+      margin: 0 0 16px;
       position: relative;
     }
 
     .purple-line {
-      width: 85px;
+      width: 65px;
       height: 4px;
-      background: linear-gradient(90deg, #4f46e5, #7c3aed, #ec4899);
-      margin: 0 auto 60px;
+      background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 50%, #7c3aed 100%);
+      margin: 0 auto 55px;
       border-radius: 50px;
-      box-shadow: 0 2px 10px rgba(79, 70, 229, 0.4);
+      box-shadow: 0 2px 12px rgba(79, 70, 229, 0.35);
     }
 
     /* ================================================ */
@@ -214,14 +231,14 @@
     }
 
     .vs-menu a {
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       text-transform: uppercase;
-      color: #2d3a52;
+      color: #334155;
       text-decoration: none;
       font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 0.8px;
-      padding: 6px 12px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      padding: 6px 14px;
       transition: color 0.3s ease;
       position: relative;
       white-space: nowrap;
@@ -232,11 +249,12 @@
       content: '';
       position: absolute;
       width: 0;
-      height: 2px;
+      height: 2.5px;
       bottom: 2px;
       left: 50%;
-      background: linear-gradient(90deg, #4f46e5, #7c3aed);
+      background: linear-gradient(90deg, #4f46e5, #06b6d4);
       transition: width 0.3s ease, left 0.3s ease;
+      border-radius: 99px;
     }
 
     /* Dynamically switched active section underline */
@@ -260,22 +278,25 @@
       }
       .vs-menu-contact-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
+        box-shadow: 0 8px 24px rgba(79, 70, 229, 0.45);
       }
     }
 
     .vs-menu-contact-btn {
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       text-transform: uppercase;
       background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
       color: white !important;
       text-decoration: none;
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: 0.8px;
-      padding: 8px 18px;
+      padding: 9px 20px;
       border-radius: 50px;
-      box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+      box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35);
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
       transition: all 0.3s ease;
       white-space: nowrap;
     }
@@ -416,34 +437,37 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 14px;
-      background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(124, 58, 237, 0.1));
+      padding: 6px 15px;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
       border: 1px solid rgba(79, 70, 229, 0.2);
       color: #4f46e5;
       border-radius: 50px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 800;
       letter-spacing: 1px;
       text-transform: uppercase;
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       margin-bottom: 18px;
     }
 
     .vs-card h1 {
+      font-family: 'Outfit', sans-serif;
       font-size: 46px;
+      font-weight: 800;
       line-height: 1.15;
       margin: 0 0 20px 0;
-      color: #0a1628;
-      letter-spacing: 1px; 
+      color: #090e1a;
+      letter-spacing: -0.02em; 
     }
 
     .vs-card h1 span {
-      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 60%, #ec4899 100%);
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #06b6d4 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     .vs-card p {
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
       line-height: 1.8;
       color: #334155;
@@ -509,12 +533,34 @@
     }
 
     .about-content h2 {
-      font-size: 38px;
-      margin: 0 0 16px 0;
-      color: #0a1628;
+      font-family: 'Outfit', sans-serif;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+      margin: 0 0 8px 0;
+      color: #090e1a;
+      text-transform: none;
+    }
+
+    .about-content h2 span {
+      background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .about-subtitle {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #6366f1;
+      margin-bottom: 18px;
     }
 
     .about-content p {
+      font-family: 'Inter', sans-serif;
       font-size: 15.5px;
       line-height: 1.8;
       color: #334155;
@@ -536,19 +582,20 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 14px;
+      padding: 7px 15px;
       background: #ffffff;
-      border: 1px solid rgba(79, 70, 229, 0.16);
+      border: 1px solid rgba(79, 70, 229, 0.18);
       border-radius: 50px;
       font-size: 12px;
       font-weight: 700;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       color: #3730a3;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.04);
       transition: all 0.25s ease;
     }
 
     .about-feat-pill:hover {
-      background: rgba(79, 70, 229, 0.08);
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
       border-color: rgba(79, 70, 229, 0.35);
       transform: translateY(-2px);
     }
@@ -609,13 +656,13 @@
       display: inline-flex;
       align-items: center;
       padding: 6px 16px;
-      background: rgba(79, 70, 229, 0.08);
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
       border: 1px solid rgba(79, 70, 229, 0.18);
       color: #4f46e5;
       border-radius: 100px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 800;
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 15px;
@@ -623,14 +670,24 @@
     }
 
     .vm-card h3 {
+      font-family: 'Outfit', sans-serif;
       font-size: 26px;
-      color: #0a1628;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #090e1a;
       margin: 0 0 12px 0;
+      text-transform: none;
+      transition: color 0.3s ease;
+    }
+
+    .vm-card:hover h3 {
+      color: #4f46e5;
     }
 
     .vm-card p {
+      font-family: 'Inter', sans-serif;
       font-size: 15px;
-      line-height: 1.7;
+      line-height: 1.75;
       color: #334155;
       margin: 0;
       text-align: justify;
@@ -678,16 +735,17 @@
       position: absolute;
       top: 14px;
       right: 14px;
-      background: rgba(10, 22, 40, 0.75);
+      background: rgba(10, 22, 40, 0.8);
       backdrop-filter: blur(8px);
       color: #ffffff;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 50px;
       font-size: 11px;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.8px;
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      border: 1px solid rgba(255, 255, 255, 0.18);
       z-index: 2;
     }
 
@@ -711,12 +769,22 @@
     }
 
     .service-card h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: 20px;
-      margin: 0 0 12px 0;
-      color: #0a1628;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 0 0 10px 0;
+      color: #090e1a;
+      text-transform: none;
+      transition: color 0.3s ease;
+    }
+
+    .service-card:hover h3 {
+      color: #4f46e5;
     }
 
     .service-card p {
+      font-family: 'Inter', sans-serif;
       font-size: 14px;
       line-height: 1.65;
       color: #475569;
@@ -785,36 +853,38 @@
     }
 
     .wcu-icon-box {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, rgba(79, 70, 229, 0.12) 0%, rgba(124, 58, 237, 0.18) 100%);
+      width: 50px;
+      height: 50px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.12) 0%, rgba(6, 182, 212, 0.15) 100%);
       border: 1px solid rgba(79, 70, 229, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 22px;
       flex-shrink: 0;
-      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.15);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.12);
+      transition: transform 0.3s ease, background 0.3s ease;
     }
 
     .wcu-card:hover .wcu-icon-box {
       transform: scale(1.1) rotate(5deg);
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.2) 0%, rgba(6, 182, 212, 0.25) 100%);
     }
 
     .wcu-card h3 {
-      font-size: 22px;
-      color: #0a1628;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #090e1a;
       margin: 0;
+      text-transform: none;
+      transition: color 0.3s ease;
     }
 
-    .wcu-card p {
-      font-size: 15px;
-      line-height: 1.7;
-      color: #475569;
-      margin: 0;
-      text-align: justify;
+    .wcu-card:hover h3 {
+      color: #4f46e5;
     }
 
     /* ================================================ */
@@ -829,22 +899,34 @@
 
     /* STYLISH EXECUTIVE CONTACT INFO CARD */
     .contact-info-card {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      padding: 38px;
-      border-radius: 26px;
-      border: 1px solid rgba(79, 70, 229, 0.15);
-      box-shadow: 0 20px 50px rgba(79, 70, 229, 0.06), 0 4px 15px rgba(0, 0, 0, 0.02);
-      transition: all 0.4s ease;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 40px;
+      border-radius: 28px;
+      border: 1px solid rgba(79, 70, 229, 0.16);
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-info-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 50%, #7c3aed 100%);
     }
 
     .contact-info-card:hover {
-      border-color: rgba(79, 70, 229, 0.3);
-      box-shadow: 0 25px 60px rgba(79, 70, 229, 0.12);
+      border-color: rgba(79, 70, 229, 0.35);
+      box-shadow: 0 28px 60px rgba(79, 70, 229, 0.12), 0 0 35px rgba(6, 182, 212, 0.08);
       transform: translateY(-4px);
     }
 
@@ -856,20 +938,21 @@
     }
 
     .contact-avatar-box {
-      width: 58px;
-      height: 58px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      width: 64px;
+      height: 64px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #090e1a 0%, #312e81 40%, #4f46e5 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #ffffff;
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Outfit', sans-serif;
       font-size: 22px;
       font-weight: 800;
       letter-spacing: 1px;
-      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+      box-shadow: 0 8px 24px rgba(79, 70, 229, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4);
       flex-shrink: 0;
+      border: 1.5px solid rgba(255, 255, 255, 0.25);
     }
 
     .contact-leader-meta {
@@ -879,8 +962,8 @@
     }
 
     .contact-company-tag {
-      font-family: 'Cabinet Grotesk', sans-serif;
-      font-size: 12px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
       font-weight: 800;
       letter-spacing: 1.5px;
       color: #4f46e5;
@@ -888,43 +971,64 @@
     }
 
     .contact-leader-name {
-      font-size: 22px;
-      color: #0a1628;
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      color: #090e1a;
       margin: 0;
       font-weight: 800;
-      letter-spacing: 0.5px;
+      letter-spacing: -0.01em;
+      text-transform: none;
     }
 
     .contact-role-badge {
-      display: inline-block;
-      font-size: 13px;
-      color: #64748b;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12.5px;
+      color: #475569;
       font-weight: 600;
+    }
+
+    .contact-status-dot {
+      width: 7px;
+      height: 7px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+      display: inline-block;
     }
 
     .contact-card-divider {
       height: 1px;
-      background: linear-gradient(90deg, rgba(79, 70, 229, 0.25), rgba(124, 58, 237, 0.1), transparent);
+      background: linear-gradient(90deg, rgba(79, 70, 229, 0.25), rgba(6, 182, 212, 0.2), transparent);
       margin-bottom: 24px;
     }
 
     .contact-details-list {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 14px;
     }
 
     .contact-detail-item {
       display: flex;
       align-items: flex-start;
       gap: 15px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      transition: all 0.25s ease;
+    }
+
+    .contact-detail-item:hover {
+      background: rgba(79, 70, 229, 0.04);
     }
 
     .contact-icon-bubble {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
-      background: rgba(79, 70, 229, 0.08);
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
       border: 1px solid rgba(79, 70, 229, 0.16);
       display: flex;
       align-items: center;
@@ -932,12 +1036,15 @@
       font-size: 18px;
       flex-shrink: 0;
       transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.05);
     }
 
     .contact-detail-item:hover .contact-icon-bubble {
-      background: rgba(79, 70, 229, 0.15);
-      border-color: rgba(79, 70, 229, 0.35);
-      transform: scale(1.08);
+      background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+      color: #ffffff;
+      border-color: transparent;
+      transform: scale(1.08) rotate(-3deg);
+      box-shadow: 0 6px 18px rgba(79, 70, 229, 0.28);
     }
 
     .contact-detail-text {
@@ -953,21 +1060,23 @@
       letter-spacing: 1px;
       color: #64748b;
       font-weight: 700;
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
     .contact-detail-text p {
       margin: 0;
+      font-family: 'Inter', sans-serif;
       font-size: 14.5px;
       color: #1e293b;
       line-height: 1.5;
     }
 
     .contact-link {
-      color: #1e293b;
+      color: #0f172a;
       text-decoration: none;
       font-size: 14.5px;
       font-weight: 600;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       transition: color 0.2s ease;
       display: inline-block;
     }
@@ -976,36 +1085,121 @@
       color: #4f46e5;
     }
 
+    /* Executive Quick Action Buttons */
+    .contact-quick-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(79, 70, 229, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .contact-action-btn {
+      flex: 1;
+      min-width: 100px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .contact-action-btn.primary {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: #ffffff !important;
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25);
+    }
+
+    .contact-action-btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+    }
+
+    .contact-action-btn.whatsapp {
+      background: #25d366;
+      color: #ffffff !important;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+    }
+
+    .contact-action-btn.whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+      background: #20bd5a;
+    }
+
+    .contact-action-btn.secondary {
+      background: rgba(79, 70, 229, 0.06);
+      color: #4f46e5 !important;
+      border: 1px solid rgba(79, 70, 229, 0.18);
+    }
+
+    .contact-action-btn.secondary:hover {
+      background: rgba(79, 70, 229, 0.14);
+      transform: translateY(-2px);
+    }
+
     /* CONTACT FORM */
     .contact-form {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       padding: 40px;
-      border-radius: 26px;
-      border: 1px solid rgba(79, 70, 229, 0.12);
+      border-radius: 28px;
+      border: 1px solid rgba(79, 70, 229, 0.15);
       display: flex;
       flex-direction: column;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
       transition: all 0.3s ease;
     }
 
     .contact-form:hover {
-      border-color: rgba(79, 70, 229, 0.25);
+      border-color: rgba(79, 70, 229, 0.3);
+      box-shadow: 0 25px 60px rgba(79, 70, 229, 0.1);
+    }
+
+    .contact-form-header {
+      margin-bottom: 22px;
+    }
+
+    .contact-form-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: #090e1a;
+      margin: 0 0 6px 0;
+      letter-spacing: -0.01em;
+      text-transform: none;
+    }
+
+    .contact-form-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #64748b;
+      margin: 0;
+      line-height: 1.5;
     }
 
     .contact-form input, 
     .contact-form textarea {
       width: 100%;
-      padding: 16px 20px;
-      margin-bottom: 20px;
+      padding: 15px 18px;
+      margin-bottom: 18px;
       border-radius: 14px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(15, 23, 42, 0.1);
       background: #ffffff;
-      color: #0a1628;
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      transition: all 0.3s ease;
+      color: #090e1a;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14.5px;
+      font-weight: 500;
+      transition: all 0.25s ease;
       box-sizing: border-box;
     }
 
@@ -1018,25 +1212,29 @@
     }
 
     .contact-form button {
-      font-family: 'Cabinet Grotesk', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
+      letter-spacing: 1px;
       font-weight: 800;
       padding: 16px;
-      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
       color: white;
       border: none;
       border-radius: 14px;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 14.5px;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.28);
+      box-shadow: 0 8px 25px rgba(79, 70, 229, 0.28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
 
     .contact-form button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(79, 70, 229, 0.4);
-      background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+      box-shadow: 0 12px 30px rgba(79, 70, 229, 0.4);
+      background: linear-gradient(135deg, #4338ca 0%, #0891b2 100%);
     }
 
     /* EXACT ORIGINAL GOOGLE MAP CONTAINER */
@@ -1400,11 +1598,25 @@
       .service-card-img-wrapper {
         height: 200px;
       }
+      .section-eyebrow {
+        font-size: 10px;
+        padding: 4px 12px;
+      }
       .section-title {
         font-size: 28px;
       }
       .purple-line {
         margin-bottom: 40px;
+      }
+      .about-subtitle {
+        font-size: 11px;
+      }
+      .contact-quick-actions {
+        gap: 8px;
+      }
+      .contact-action-btn {
+        padding: 9px 12px;
+        font-size: 11.5px;
       }
       .vs-hero-slider-container {
         height: 275px;
@@ -1678,15 +1890,19 @@
   <!-- ABOUT US SECTION - CONCISE & BALANCED (WITH AI)  -->
   <!-- ================================================ -->
   <section id="about" class="vs-section" data-aos="fade-up">
-    <h2 class="section-title">About Us</h2>
-    <div class="purple-line"></div>
+    <div class="section-header-wrap">
+      <span class="section-eyebrow">WHO WE ARE</span>
+      <h2 class="section-title">About Us</h2>
+      <div class="purple-line"></div>
+    </div>
     
     <div class="about-grid">
       <div class="about-grid-img-wrapper" data-aos="zoom-in" data-aos-delay="100">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200" alt="Team meeting" loading="lazy">
       </div>
       <div class="about-content" data-aos="fade-left" data-aos-delay="200">
-        <h2>VSQUARE INFOTECH</h2>
+        <h2>VSQUARE <span>INFOTECH</span></h2>
+        <span class="about-subtitle">Next-Generation Software Engineering & AI Solutions</span>
         <p>
           VSquare Infotech is a technology solutions company focused on
           delivering scalable software systems, modern web applications,
@@ -1741,8 +1957,11 @@
   <!-- SERVICES SECTION - ALL ORIGINAL + NEW AI CARD    -->
   <!-- ================================================ -->
   <section id="services" class="vs-section" data-aos="fade-up">
-    <h2 class="section-title">Services</h2>
-    <div class="purple-line"></div>
+    <div class="section-header-wrap">
+      <span class="section-eyebrow">WHAT WE DELIVER</span>
+      <h2 class="section-title">Services</h2>
+      <div class="purple-line"></div>
+    </div>
 
     <div class="services-grid">
       <!-- 1. Custom Software (Original Image & Text Preserved) -->
@@ -1799,8 +2018,11 @@
   <!-- WHY CHOOSE US SECTION - EXACT ORIGINAL RESTORED  -->
   <!-- ================================================ -->
   <section id="why-choose-us" class="vs-section" data-aos="fade-up">
-    <h2 class="section-title">Why Us</h2>
-    <div class="purple-line"></div>
+    <div class="section-header-wrap">
+      <span class="section-eyebrow">THE VSQUARE ADVANTAGE</span>
+      <h2 class="section-title">Why Us</h2>
+      <div class="purple-line"></div>
+    </div>
 
     <div class="wcu-grid">
       <div class="wcu-card" data-aos="fade-right" data-aos-delay="100">
@@ -1861,8 +2083,11 @@
   <!-- CONTACT SECTION - STYLISH EXECUTIVE CARD         -->
   <!-- ================================================ -->
   <section id="contact" class="vs-section" data-aos="fade-up">
-    <h2 class="section-title">Contact</h2>
-    <div class="purple-line"></div>
+    <div class="section-header-wrap">
+      <span class="section-eyebrow">GET IN TOUCH</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="purple-line"></div>
+    </div>
 
     <div class="contact-grid">
       <!-- STYLISH EXECUTIVE CONTACT INFO CARD -->
@@ -1875,7 +2100,7 @@
             <div class="contact-leader-meta">
               <div class="contact-company-tag">VSQUARE INFOTECH</div>
               <h3 class="contact-leader-name">Vaishakh Sivarajan</h3>
-              <span class="contact-role-badge">Founder & Managing Director</span>
+              <span class="contact-role-badge"><span class="contact-status-dot"></span> Founder & Managing Director</span>
             </div>
           </div>
 
@@ -1914,16 +2139,33 @@
               </div>
             </div>
           </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="contact-quick-actions">
+            <a href="tel:+918547469165" class="contact-action-btn primary">
+              <span>📞</span> Call Now
+            </a>
+            <a href="https://wa.me/918547469165" target="_blank" rel="noopener noreferrer" class="contact-action-btn whatsapp">
+              <span>💬</span> WhatsApp
+            </a>
+            <a href="mailto:info@vsquareinfotech.co.in" class="contact-action-btn secondary">
+              <span>✉️</span> Email Us
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- CONTACT INQUIRY FORM -->
       <form class="contact-form" action="https://formspree.io/f/xgojndlz" method="POST" data-aos="fade-left" data-aos-delay="200">
+        <div class="contact-form-header">
+          <h3 class="contact-form-title">Start a Conversation</h3>
+          <p class="contact-form-desc">Tell us about your project or technology needs. We respond within 24 hours.</p>
+        </div>
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="text" name="phone" placeholder="Phone Number">
         <input type="email" name="email" placeholder="Email Address" required>
         <textarea rows="5" name="message" placeholder="Project Details or Message" required></textarea>
-        <button type="submit">SEND MESSAGE</button>
+        <button type="submit">SEND INQUIRY →</button>
       </form>
     </div>
 
